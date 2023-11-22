@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  background: linear-gradient(225deg, #de9e95 10%, #f7da98 75%);
+  min-height: 100%;
+  background-size: cover;
+}
+
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 9%;
+  background: rgba(255, 255, 255, 0.047); /* Add a semi-transparent background */
+  backdrop-filter: blur(5px); /* Add a slight blur to improve visibility */
+  transition: transform 0.3s ease; /* Add a smooth transition effect for hiding */
+}
+
+/* Add padding for the main content to avoid overlapping with the header/navbar */
+main {
+  padding-top: 70px; /* Adjust the value to match your navbar's height */
+}
+
+
+.logo{
+  font-size: 20px;
+  font-weight: 700;
+  color: #2D434B;
+  }
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: #2D434B;
+  margin-left: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom: 2px solid white;
+}
+#menu-icon{
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+  
+}
+.med{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(225deg, #de9e95 10%, #f7da98 75%);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+section{
+  padding: 0 10%;
+}
+.image-size {
+  max-width: 80%; 
+  height: auto;    
+}
+
+.med-text  h1{
+  font-size: 60px;
+  line-height: 1;
+  color: #2D434B;
+  font-family: 'Skranji', cursive;
+  margin: 0 0 45px;
+}
+.med-text p{
+  color: rgb(34, 33, 33);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+.med-img img{
+  max-width: 700px;
+  height: auto;
+}
+.med-text a{
+  display: inline-block;
+  color: white;
+  background: #2D434B;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all .55 ease;
+}
+.med-text a:hover{
+  background: transparent;
+  border: 1px solid black;
+  transform: translateX(5px);
+  color: #2D434B;
+}
+
+
+/* footer */
+.footerContainer{
+  background-color: #2D434B;
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: #F2E9E4;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialIcons a:hover{
+  background-color: #2D434B;
+  transition: .5s;
+}
+.socialIcons a:hover i{
+  color: #F2E9E4;
+  transition: .5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+}
+.footerNav ul li a{
+  color: #F2E9E4;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.5;
+  transition: .5s;
+}
+.footerNav ul li a:hover{
+  opacity: 2;
+}
+.footerBottom{
+ 
+  padding: 20px;
+  text-align: center;
+}
+
+/* end of footer */
+.bd-container{
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.card{
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+  background-color: #2d434b33;
+}
+.card_container{
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 100px;
+  max-width: 200%;
+}
+.card_glass{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.5rem;
+  background: linear-gradient(225deg, #de9e95 10%, #f7da98 65%);
+  box-shadow: rgb(255, 254, 254);
+  border-radius: 1.5rem;
+  backdrop-filter: 1.5rem;
+}
+.card_img{
+  width: 100px;
+  height: 80px;
+  border-radius: 10%;
+  border: 2px solid #F2E9E4;
+  margin-bottom: 1rem;
+}
+.card_data{
+  font-size: small;
+  color: #2D434B;
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
+.card_button{
+  display: inline-block;
+  background: #2D434B;
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  color: #F2E9E4;
+  font-weight: 500;
+  transition: .4s;
+}
+.card_button:hover{
+  background: transparent;
+  border: 1px solid black;
+  transform: translateY(2px);
+  color: #2D434B;
+}
+/* submission */
+.container{
+  width: 100%;
+  max-width: 700px;
+  padding: 28px;
+  margin: 100px 200px;
+  border-radius: 30px;
+  padding: 0 100px;
+  box-shadow: inset 2px 2px 2px white;
+  position: relative;
+  overflow: hidden;
+  background-color: #2d434b33;
+  height: 870px;
+}
+.form-title{
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  padding-top: 5%;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: solid 1px white;
+}
+/* Apply margin and padding to form elements */
+.form-group {
+  margin-bottom: 30px; /* Add space between form groups */
+  
+}
+
+label {
+  display: block; /* Make labels block-level for better spacing */
+  margin-bottom: 5px; /* Add space below labels */
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Add space below select elements */
+  border-radius: 5px; /* Round the dropdown menus */
+  border: 1px solid #ccc; /* Add a border for better appearance */
+  background-color: white; /* Set a background color */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #2D434B;
+  color: #F2E9E4;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 12px 24px; /* Add padding to the button */
+}
+
+button[type="submit"]:hover {
+  background-color: #F2E9E4;
+  color: #2D434B;
+}
+
+.card_container_details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1.5rem; /* Adjust padding as needed */
+    max-width: 100%;
+    margin: 0 auto; /* Add this line to center the container horizontally */
+}
+
+.card_data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.card_data th, .card_data td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.card_data th {
+    background-color: #2D434B;
+    color: #F2E9E4;
+}
+
+@media (max-width: 768px) {
+    .card_data table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .card_data th, .card_data td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card_data th {
+        text-align: center;
+    }
+  }
+/* submission */
+
